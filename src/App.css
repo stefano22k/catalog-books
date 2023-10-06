@@ -1,11 +1,15 @@
 body {
   padding: 50px;
 }
+
 h1 {
   text-align: center;
   font-size: 24px;
   margin-bottom: 40px;
-  margin-top: -10px;
+}
+
+h2, p {
+  text-align: center;
 }
 
 /* Estilos para la cuadrícula de libros */
@@ -23,6 +27,7 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   text-align: center;
+  cursor: pointer;
 }
 
 .book-card:hover {
@@ -49,4 +54,69 @@ h1 {
 /* Estilos para la descripción del libro */
 .book-card .descripcion {
   font-style: italic;
+}
+
+/* Estilos para el contenedor del menú */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Estilos para los enlaces del menú */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 20px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #ff5733; /* Cambia el color al hacer hover */
+}
+
+/* Estilos para el botón */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  text-decoration: none;
+  border: none;
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Efecto de transición al hacer hover */
+}
+
+.button:hover {
+  background-color: #ff5733;
+}
+
+/* Estilos para la etiqueta de la categoría */
+label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Estilos para el elemento select */
+select {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+/* Estilos para los option dentro del select */
+select option {
+  font-size: 16px;
+}
+
+/* Estilos para el elemento select cuando está enfocado (:focus) */
+select:focus {
+  outline: none;
+  border-color: #ff5733 /* Cambia el color del borde al enfocar */
 }
